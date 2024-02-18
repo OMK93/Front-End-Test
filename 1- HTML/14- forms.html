@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Forms</title>
+</head>
+<body>
+<h1>HTML Forms</h1>
+
+<form action="get.html" method="get">
+   <div>
+       <input type="text" name="username" placeholder="Please enter your name here" required>
+   </div>
+   <div>
+       <input type="email" name="email_address" placeholder="example@mail.com" required>
+   </div>
+
+    <div>
+        <input type="password" name="password" placeholder="Password" required>
+    </div>
+
+    <div>
+        <input type="number" name="age" placeholder="Your age" required min="20" max="22">
+    </div>
+
+<!--    <button>Submit</button>-->
+    <input type="submit">
+
+    <div>
+        <button type="button">Another Action</button>
+    </div>
+
+    <div>
+<!--        <button type="reset">Reset Fields</button>-->
+        <input type="reset">
+    </div>
+
+<!--
+
+Query String
+
+?key1=value1&key2=value2.................
+
+-->
+</form>
+</body>
+</html>

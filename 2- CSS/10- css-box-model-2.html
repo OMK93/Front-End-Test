@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Box Model 2</title>
+
+    <style>
+        .box-1 {
+            width: 200px;
+            height: 200px;
+            /*border-width: 1px;*/
+            /*border-style: solid;*/
+            /*border-color: #000;*/
+            border: 1px solid red;
+            border-left-width: 10px;
+            border-top: none;
+            border-right-color: darkblue;
+
+            /*margin-top: 60px;*/
+            /*margin-left: 60px;*/
+            /*margin-bottom: 60px;*/
+            /*margin-right: 60px;*/
+
+            /*Top Right Bottom Left*/
+            /*margin: 60px 60px 60px 60px;*/
+
+            /*Top and Bottom    Left and Right */
+            margin: 50px 0;
+
+            /* Top  Left and right Bottom */
+            /*margin: 100px 200px 200px;*/
+
+            /* Same concept exactly for padding*/
+
+            padding: 50px;
+        }
+
+        .box-2 {
+            width: 200px;
+            height: 200px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: blue;
+            border-bottom: 1px solid red;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 30px;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<h1>More about CSS Box Model</h1>
+
+<div class="box-1">
+Content
+</div>
+
+<div class="box-2">
+
+</div>
+
+<div class="circle">
+
+</div>
+</body>
+</html>

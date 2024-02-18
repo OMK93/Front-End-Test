@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ways to include CSS</title>
+
+    <style>
+        /*Internal CSS Rules*/
+        .red-color {
+            color: red;
+        }
+    </style>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="test-styles.css">
+
+    <!-- Separation Of Concerns-->
+</head>
+<body>
+<h1>How to include CSS into the HTML Document</h1>
+
+<ol>
+    <li>Internal Styles (inside the head)</li>
+    <li>Inline Styles (using style attribute on the element)</li>
+    <li>External Style Sheet (The recommended way)</li>
+</ol>
+
+<p class="red-color">This is a test paragraph</p>
+</body>
+</html>
