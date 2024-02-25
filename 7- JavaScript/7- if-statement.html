@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If Statement (Conditional Statement)</title>
+</head>
+<body>
+<script>
+    /*
+    * Syntax
+    *  if (condition) {
+    * // Code will run in case the condition evaluates to true
+    * } else {
+    * // Code when the condition is false
+    * }
+    * */
+
+    let age = prompt('Please enter your age');
+
+    age = parseInt(age);
+
+    // if (age) {
+    //     console.log('Thank you success');
+    // } else {
+    //     console.log('Please enter your age correctly')
+    // }
+
+    // Ternary operator => condition ? :
+
+    console.log(age ? 'Thank you success' : 'Please enter your age correctly')
+
+    // Truthy and Falsy values
+
+    // In general everything will evaluate to true, except
+    /*
+    * 0
+    * empty string ''
+    * null
+    * undefined
+    * */
+</script>
+</body>
+</html>
