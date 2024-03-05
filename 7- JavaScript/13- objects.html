@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects in JavaScript</title>
+</head>
+<body>
+
+<script>
+    const car = ['Red', 'BMW', 300, 2000, true];
+
+    const newCar = {
+        color: 'Red',
+        type: 'BMW',
+        maxSpeed: 300,
+        model: 2000,
+        isFourByFour: true,
+        'new-value': 'Last Value',
+        0: 'Zero value'
+    }
+
+    const color = newCar.color;
+
+    const student = {
+        firstName: 'Omar',
+        lastName: 'Kamal'
+    };
+    student.email = 'omar@gmail.com';
+    student.firstName = 'Mohammad';
+    console.log(newCar['model']);
+</script>
+</body>
+</html>

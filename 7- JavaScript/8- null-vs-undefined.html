@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Null vs Undefined</title>
+</head>
+<body>
+<h4>Null</h4>
+<p>Intentional absence of any object value, assignment (primitive type)</p>
+<hr>
+
+<h4>Undefined</h4>
+<p>Absence of any object value (primitive type)</p>
+<script>
+    const name = '';
+    const student = null;
+
+    const array = [1, 2, 3, null];
+
+    console.log(name);
+    console.log(student);
+    console.log(array[3]);
+    console.log(array[500]);
+
+    const age = 50; // Variable Declaration
+    console.log(age)
+    const age = 100; // Re declaration
+    console.log(age)
+
+</script>
+</body>
+</html>

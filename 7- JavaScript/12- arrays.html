@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays in Javascript</title>
+</head>
+<body>
+
+<script>
+    // Array
+    const array = []; // Empty array
+
+    // if (array.length) {
+    //     console.log('True');
+    // } else {
+    //     console.log('false');
+    // }
+    const numbers = [1, 2, 3];
+    const users = ['Omar', 'Mohammad', 'Ahmad'];
+    // Arrays can store any type of value
+    const mixedArray = [1, 0, null, true, 'String'];
+
+    // Arrays are indexed and the index starts from 0
+    // Array length starts from 1
+    // Last index = length of the array - 1
+    // Accessing array elements using the index
+    // We can change array elements also using the index
+    // We can add a new value to the array at any index
+    const ahmad = users[2];
+    // console.log(ahmad)
+
+    const students = [
+        'Omar', 'Ahmad', 'Sarah', 'Khalid', 'Omar', 'Ahmad', 'Sarah',
+        'Khalid', 'Omar', 'Ahmad', 'Sarah', 'Khalid', 'Omar', 'Ahmad', 'Sarah', 'last'
+    ];
+    // students[0] = 'Omar Kamal';
+    // students[4] = 'Mohammad';
+    students[students.length] = 1;
+    students[students.length] = 2;
+    students[students.length] = 3;
+    students[500] = 2;
+    // console.log(students)
+
+    const values = [1, [1,2,3], true, 'String'];
+
+    console.log(values[1][1])
+</script>
+</body>
+</html>
