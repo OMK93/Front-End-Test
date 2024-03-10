@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript Functions</title>
+</head>
+<body>
+
+<script>
+    // Function declaration
+    function print(name = 'Ahmad') { // function parameters
+        console.log(name);
+    }
+
+    function sum(x, y = 1) { // Optional parameters
+        return x + y;
+        // Un reachable code
+    }
+
+    // Function call (invoke)
+    print('Omar'); // function argument
+    print('Mohammad');
+    print();
+    const result = sum([10],2);
+    console.log(result)
+
+    // Function expression
+    // function getUserById(id) { Function Declaration
+    //
+    // }
+
+    const getUserById = function (id) { // anonymous function
+        // Code
+    }
+
+    getUserById()
+
+    // Arrow Functions
+    const getAllUsers = number =>  number >= 100 ? 'Number greater than 100' : 'Number is less than 100';
+
+    const newNumber = getAllUsers(10);
+
+    console.log(newNumber)
+</script>
+</body>
+</html>

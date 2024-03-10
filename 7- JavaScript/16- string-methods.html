@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Methods</title>
+</head>
+<body>
+
+
+<script>
+    function printName() {
+        console.log('Omar');
+    }
+
+    const user = {
+        name: 'Omar',
+        age: 30,
+        isActive: true,
+        printName: function () {
+            console.log('Omar inside object');
+        },
+        printAge() {
+            console.log(30)
+        },
+        printAllData: () => {
+
+        }
+    }
+
+    // user.printAge();
+
+    const type = 'Mercedes';
+    const color = 'Red';
+    const isNew = true;
+
+    // const car = {
+    //     type: type,
+    //     color: color,
+    //     isNew: isNew
+    // }
+
+    // Shorthand
+    const car = {
+        type,
+        color2: color,
+        isNew
+    }
+
+    const day = 200;
+
+    const days = {
+        1: 'Sun',
+        2: 'Mon',
+        3: 'Tues',
+        default: 'Please enter a value between 1 and 3'
+    }
+
+    // if (day ===1 || day === 2 || day === 3) {
+    //     console.log(days[day]);
+    // } else {
+    //     console.log(days.default)
+    // }
+
+    console.log(days[day] || days.default)
+
+    // if (days[day]) {
+    //     console.log(days[day])
+    // } else {
+    //     console.log(days.default)
+    // }
+</script>
+</body>
+</html>
