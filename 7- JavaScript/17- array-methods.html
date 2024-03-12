@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Methods</title>
+</head>
+<body>
+<ul>
+    <li>push</li>
+    <li>pop</li>
+    <li>shift</li>
+    <li>unshift</li>
+    <li>forEach</li>
+    <li>map</li>
+    <li>filter</li>
+    <li>find</li>
+</ul>
+
+<script>
+    const names = ['Omar', 'Aya', 'Mohammad', 'Sarah'];
+
+    // Push
+    // const newNames = [...names];
+    // newNames.push('Ahmad');
+    // console.log('names', names);
+    // console.log(newNames);
+
+    // Pop
+    // console.log(names);
+    // const popArray = names.pop();
+    // console.log(popArray);
+    // console.log(names)
+
+    // unshift
+    // console.log(names);
+    // const unshift = names.unshift('newName');
+    // console.log(unshift);
+    // console.log(names);
+
+    // shift
+    // const shift = names.shift();
+    // console.log(shift);
+
+    // forEach
+    // [1, 2, 3, 4, -10].forEach(printNumber);
+    //
+    // function printNumber(number) {
+    //     console.log(number)
+    // }
+    //
+    // [1, 2, 3, 4, -10].forEach((n) => { // More recommended
+    //     console.log(n)
+    // });
+
+    const numbers = [1, 2, 30, 40];
+
+    console.log("Original", numbers);
+    const mapped = numbers.map(n => {
+        if (n > 10) {
+            return 0;
+        } else {
+            return 5;
+        }
+    });
+    console.log("Mapped", mapped);
+    console.log("Original", numbers);
+
+    const users = [
+        {
+            id: 1,
+            name: 'Ahmad',
+            isActive: false
+        },
+        {
+            id: 2,
+            name: 'Omar',
+            isActive: true
+        },
+        {
+            id: 3,
+            name: 'Aya',
+            isActive: false
+        }
+    ];
+
+    const ids = users.map(user => {
+        return user.id;
+    })
+
+    console.log('IDs', ids);
+
+    const activeUsers = users.filter(user => {
+        return user.isActive;
+    });
+
+    console.log('Active Users', activeUsers);
+
+    const user2 = users.find(user => user.id === 2);
+
+    console.log('user2', user2);
+
+    console.log(['Omar', 'Mohammad', 'Ahmad'].join())
+
+    // Array methods as homework to read => slice, splice, findIndex, some, every
+    // String methods
+    // Math functions
+</script>
+</body>
+</html>
