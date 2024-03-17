@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Element</title>
+</head>
+<body>
+<h1>This is the title to create element</h1>
+<hr>
+<div id="main-div">
+    <ul>
+        <li>first item</li>
+    </ul>
+</div>
+<h2>Second title</h2>
+
+<script>
+    const mainDiv = document.getElementById('main-div');
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML = '<p>This is a nested paragraph 1</p>';
+
+    const newDiv2 = document.createElement('div');
+    newDiv2.innerHTML = '<p>This is a nested paragraph 2</p>';
+    mainDiv.append(newDiv, newDiv2);
+    // mainDiv.appendChild(newDiv2);
+
+    // Read about appendChild vs append
+</script>
+</body>
+</html>

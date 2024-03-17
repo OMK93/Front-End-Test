@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changing styles</title>
+
+    <style>
+        /*#title {*/
+        /*    background-color: blue;*/
+        /*}*/
+
+        .red-color {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1 id="title">Main title</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea est fugiat iste iure magni numquam quae rem veniam
+    voluptas?
+</p>
+
+<script>
+    const title = document.querySelector('#title');
+
+    // Change color to red
+    // title.style.border = '1px solid red'
+
+    // setTimeout(() => {
+    //     title.style.display = 'none';
+    // }, 5000);
+
+    // Add class to the title
+    // title.classList.add('red-color')
+    //
+    // setTimeout(() => {
+    //     title.classList.remove('red-color')
+    // }, 5000);
+
+    setInterval(() => {
+        title.classList.toggle('red-color');
+    }, 10000);
+</script>
+</body>
+</html>

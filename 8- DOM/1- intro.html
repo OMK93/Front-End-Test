@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model</title>
+</head>
+<body>
+<h1 id="main-title" class="red">Title 1</h1>
+<h1 id="main-title" class="red new">Title 2</h1>
+
+<p class="parag">This is a test paragraph</p>
+<script>
+    // Selecting element by id
+    const mainTitle = document.getElementById('main-title');
+
+    // Select element by tag name
+    const parag = document.getElementsByTagName('p');
+
+    // Select element by class name
+    const paragByClass = document.getElementsByClassName('parag');
+
+    // Css Selector or query selector
+    const titleMain = document.querySelector('.red.new');
+    // const titleMain = document.querySelectorAll('.red');
+
+    console.log(titleMain)
+
+    setTimeout(() => {
+        mainTitle.innerHTML = '<em>New Title</em>';
+    }, 3000);
+</script>
+</body>
+</html>
