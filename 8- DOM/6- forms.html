@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Handling</title>
+</head>
+<body>
+<form action="" method="get" novalidate>
+    <input id="name" type="text" name="name" placeholder="Enter your name">
+    <input id="email" type="email" name="email" placeholder="Enter your email">
+    <button>Submit</button>
+</form>
+
+<script>
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Handle form submit
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+
+        console.log(name);
+        console.log(email)
+    });
+</script>
+</body>
+</html>

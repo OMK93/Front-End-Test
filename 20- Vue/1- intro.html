@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS Introduction</title>
+</head>
+<body>
+<div id="app">
+    <h1>{{ title }}</h1>
+
+    <a v-bind:href="link" :target="target">
+        {{ source }}
+    </a>
+
+    <h2>{{ counter }}</h2>
+
+    <button @click="counter++">Increment</button>
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+    const {createApp} = Vue;
+
+    createApp({
+        data() {
+            return {
+                // Reactive Data
+                title: 'Main title',
+                source: 'Go to google',
+                link: 'https://www.google.com',
+                target: '_blank',
+                counter: 0
+            };
+        }
+    }).mount('#app');
+
+    //
+    // let counter = 0;
+    //
+    // document.getElementById('inc-btn').addEventListener('click', function () {
+    //     counter ++;
+    //     document.getElementById('counter-header').innerHTML = counter;
+    // });
+</script>
+</body>
+</html>

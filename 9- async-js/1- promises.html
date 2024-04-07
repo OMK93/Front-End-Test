@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promises</title>
+</head>
+<body>
+
+<script>
+    // Operation 1 (Getting big data from the server)
+    // Operation 2 ( console.log(1))
+    // console.log(1);
+    //
+    // setTimeout(() => {
+    //  console.log(2);
+    // }, 3000)
+    //
+    // console.log(3);
+
+    function getName() {
+        return new Promise((resolve, reject) => {
+            const name = 'Omar Kamal';
+
+            if (true) {
+                resolve(name);
+            } else {
+                reject('There was an error in your operation');
+            }
+        });
+    }
+
+   getName().then((data) => {
+       console.log(data);
+   });
+</script>
+</body>
+</html>

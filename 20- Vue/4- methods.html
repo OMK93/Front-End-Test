@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Methods</title>
+</head>
+<body>
+<div id="app">
+    <h1>{{ title }}</h1>
+
+    <button @click="changeTitle('New Title 1')">
+        Change Title 1
+    </button>
+
+    <button @click="changeTitle('New Title 2')">
+        Change Title 2
+    </button>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+    const {createApp} = Vue;
+
+    createApp({
+        data() {
+            return {
+                title: 'Vue Methods'
+            };
+        },
+        methods: {
+            changeTitle(title) {
+                this.title = title;
+
+                this.titleChanged();
+            },
+
+            titleChanged() {
+                console.log('done');
+            }
+        }
+    }).mount('#app');
+</script>
+</body>
+</html>

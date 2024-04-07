@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditional Rendering</title>
+</head>
+<body>
+<div id="app">
+    <h1 v-if="number > 5">This is the heading in case of true</h1>
+
+    <h1 v-else-if="number >= 5 && number < 10">Else if</h1>
+
+    <div v-else>
+        <h1>This is the heading in case of false</h1>
+    </div>
+</div>
+</body>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+    const {createApp} = Vue;
+
+    createApp({
+        data() {
+            return {
+                number: 5
+            };
+        }
+    }).mount('#app');
+</script>
+</html>
